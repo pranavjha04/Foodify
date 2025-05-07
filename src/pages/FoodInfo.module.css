@@ -1,0 +1,92 @@
+.foodInfoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 150rem;
+  max-width: 150rem;
+  padding: 2.5rem;
+  gap: 5rem;
+}
+
+.imageWrapper,
+.foodInfoImage {
+  width: 40rem;
+  height: 40rem;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 2.5rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.foodHeading {
+  font-weight: 800;
+  font-size: 3.2rem;
+  max-width: 58rem;
+  line-height: 1.1;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.foodHeading:visited {
+  color: var(--text-color);
+}
+
+.infoContainer {
+  font-size: 2.4rem;
+}
+
+.data {
+  color: var(--dark-red);
+}
+.imagePlaceholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+  border-radius: 2.5rem;
+}
+
+.imageLoaded {
+  animation: fadeIn 0.5s ease-in;
+}
+
+.errorImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+  color: #666;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.foodInfoImage {
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.foodInfoImage:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}

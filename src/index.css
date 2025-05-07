@@ -1,0 +1,58 @@
+@import "https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap";
+
+:root {
+  --body-bg: oklch(97.1% 0.013 17.38);
+  --text-color: oklch(14.5% 0 0);
+  --text-color-light: oklch(37.4% 0.01 67.558);
+  --light-red: oklch(88.5% 0.062 18.334);
+  --primary-red: oklch(80.8% 0.114 19.571);
+  --normal-red: oklch(70.4% 0.191 22.216);
+  --dark-red: oklch(63.7% 0.237 25.331);
+  --add-cart-btn-bg: oklch(79.2% 0.209 151.711);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  background-color: var(--body-bg);
+  line-height: 1.5;
+  font-weight: 400;
+  overflow-x: hidden;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 2.5rem 10rem;
+  gap: 7.5rem;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.contentContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 140rem;
+  width: 100%;
+  gap: 5rem;
+}

@@ -1,0 +1,49 @@
+.cartOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.cartOverlay.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.cartContainer {
+  position: fixed;
+  top: 0;
+  right: -40rem;
+  width: 40rem;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.cartOverlay.visible .cartContainer {
+  right: 0;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cartHeading {
+  font-size: 2.8rem;
+  font-weight: 800;
+}

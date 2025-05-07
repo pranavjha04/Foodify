@@ -1,0 +1,149 @@
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 150rem;
+  max-width: 150rem;
+  padding: 2.5rem 10rem;
+  gap: 7.5rem;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.formWrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-10%);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-red);
+  padding: 2.5rem;
+  border-radius: 2rem;
+  width: 50rem;
+  max-width: 100%;
+  gap: 1.75rem;
+}
+
+.form div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form div label {
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.form div input {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  background-color: var(--body-bg);
+  border: none;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 1.8rem;
+  transition: all 0.3s ease;
+}
+
+.form div input:focus {
+  outline: none;
+  background-color: white;
+  transform: translateY(-2px);
+}
+
+.form button {
+  align-self: flex-end;
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  background-color: var(--dark-red);
+  border-radius: 1.5rem;
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form button:hover {
+  background-color: var(--normal-red);
+}
+
+.form button:focus {
+  outline: none;
+  transform: translateY(-2px);
+}
+
+@media screen and (max-width: 1200px) {
+  .formContainer {
+    padding: 2.5rem 5rem;
+  }
+
+  .form {
+    width: 45rem;
+  }
+
+  .form div label {
+    font-size: 1.8rem;
+  }
+
+  .form div input {
+    font-size: 1.6rem;
+  }
+
+  .form button {
+    font-size: 1.8rem;
+    padding: 1rem 2.5rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .formContainer {
+    padding: 2.5rem 3rem;
+  }
+
+  .formWrapper {
+    transform: none;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .form button {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .formContainer {
+    padding: 1.5rem;
+    gap: 6rem;
+  }
+
+  .form {
+    padding: 2rem;
+    border-radius: 1.5rem;
+  }
+
+  .form div label {
+    font-size: 1.6rem;
+  }
+
+  .form div input {
+    font-size: 1.5rem;
+    padding: 0.9rem;
+  }
+
+  .form button {
+    font-size: 1.6rem;
+    padding: 0.9rem 2rem;
+  }
+}

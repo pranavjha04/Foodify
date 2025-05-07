@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.others {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+@media screen and (max-width: 550px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+  }
+}

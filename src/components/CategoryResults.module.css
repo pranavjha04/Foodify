@@ -1,0 +1,12 @@
+.results {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+}
+
+@media (max-width: 600px) {
+  .results {
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  }
+}

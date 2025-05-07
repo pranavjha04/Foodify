@@ -1,0 +1,21 @@
+.btn {
+  align-self: flex-end;
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background-color: hsla(135, 70%, 34%, 1);
+  transition: all 0.3s ease;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:hover {
+  background-color: hsla(131, 41%, 46%, 1);
+}

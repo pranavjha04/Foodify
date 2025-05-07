@@ -1,0 +1,9 @@
+.messageError {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  font-weight: 700;
+  font-size: 4.8rem;
+}

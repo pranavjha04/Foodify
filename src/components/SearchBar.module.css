@@ -1,0 +1,136 @@
+.suggestionSearch {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+}
+
+.searchBar {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  padding: 1.6rem;
+  background-color: var(--light-red);
+  border: none;
+  font-size: 1.8rem;
+  transition: all 0.3s ease;
+  width: 40rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 0 0 transparent;
+  margin-bottom: 5px;
+}
+
+.searchBar:focus {
+  outline: none;
+  background-color: white;
+  box-shadow: 0 0 0 5px var(--dark-red);
+}
+
+.searchBar:focus-visible {
+  outline: 3px solid var(--dark-red);
+  outline-offset: 2px;
+}
+
+.resultSuggestion {
+  position: absolute;
+  top: 100%;
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  background-color: white;
+  max-height: 30rem;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--dark-red) transparent;
+  animation: fadeIn 0.2s ease-in;
+  border-radius: 0.8rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  padding: 0;
+  margin: 0;
+}
+
+.resultSuggestion::-webkit-scrollbar {
+  width: 6px;
+}
+
+.resultSuggestion::-webkit-scrollbar-thumb {
+  background-color: var(--dark-red);
+  border-radius: 3px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.suggestion {
+  width: 100%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: var(--text-color);
+  padding: 1.6rem;
+  text-decoration: none;
+  display: block;
+}
+
+.suggestion:visited {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.suggestion:hover {
+  background-color: var(--light-red);
+  color: var(--dark-red);
+  font-weight: 600;
+}
+
+.name {
+  font-size: 1.8rem;
+  text-align: start;
+}
+
+.noSuggestion {
+  position: absolute;
+  top: 100%;
+  background-color: white;
+  width: 40rem;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 2rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.loader {
+  position: absolute;
+  top: 100%;
+  background-color: white;
+  width: 40rem;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 1.8rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

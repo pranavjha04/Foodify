@@ -1,0 +1,70 @@
+.summary {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.totalBill,
+.totalItems {
+  font-size: 2.4rem;
+}
+
+.bill,
+.items {
+  font-family: "Manrope", sans-serif;
+  font-weight: 900;
+  font-size: 2.4rem;
+  color: var(--dark-red);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.btn {
+  font-family: "Manrope", sans-serif;
+  font-weight: 900;
+  color: white;
+  background-color: var(--dark-red);
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.8rem;
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: 1.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--normal-red);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+.btn:focus {
+  outline: none;
+  transform: translateY(-2px);
+}
+
+.clearBtn {
+  color: var(--dark-red);
+  background-color: white;
+  border: 5px solid var(--dark-red);
+}
+
+.clearBtn:hover {
+  color: white;
+  background-color: var(--dark-red);
+}

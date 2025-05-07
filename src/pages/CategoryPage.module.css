@@ -1,0 +1,15 @@
+.cateogoryContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 150rem;
+  max-width: 150rem;
+}
+
+.categoryList {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 2.5rem;
+}

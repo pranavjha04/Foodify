@@ -1,0 +1,71 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: oklch(20% 0 0);
+  background-color: oklch(98.5% 0.01 20);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 1.5rem;
+  transition: all 0.3s ease;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(2rem);
+  transition: all 0.5s ease;
+}
+
+.container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.image {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 1.5rem;
+  background-color: var(--light-red);
+}
+
+.others {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  min-width: 0;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.title:visited {
+}
+.rating {
+  font-size: 1.4rem;
+}
+
+.price {
+  font-weight: 900;
+  font-size: 1.6rem;
+}
+
+.title,
+.rating,
+.price {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

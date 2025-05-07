@@ -1,0 +1,17 @@
+.categorySection {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem 3rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  animation: fadeIn 0.4s ease-in;
+}
+
+.categoryTitle {
+  align-self: flex-start;
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #333;
+  line-height: 1.2;
+}

@@ -1,0 +1,17 @@
+.cartContainer {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.cartBadge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: var(--dark-red);
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  font-weight: bold;
+}

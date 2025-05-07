@@ -1,0 +1,26 @@
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  background-color: var(--primary-red);
+  width: 25rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+
+.profile:hover {
+  transform: translateY(-2px);
+}
+
+.profile img {
+  width: 5rem;
+  border: 2.5px solid var(--normal-red);
+  border-radius: 50%;
+}
+
+.profile p {
+  font-size: 1.8rem;
+  font-weight: 900;
+}

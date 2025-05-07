@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  min-width: 150rem;
+  max-width: 150rem;
+  padding: 2.5rem;
+  max-width: 130rem;
+  gap: 5rem;
+}
+
+.text {
+  text-align: center;
+  font-size: 4.8rem;
+  font-weight: 600;
+}

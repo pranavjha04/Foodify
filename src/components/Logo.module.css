@@ -1,0 +1,22 @@
+.logo {
+  align-self: flex-start;
+  text-decoration: none;
+  color: var(--text-color);
+  width: 100%;
+}
+
+.logo:visited {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.logo p {
+  font-size: 6.2rem;
+}
+
+@media screen and (max-width: 550px) {
+  .logo p {
+    font-size: 5.6rem;
+    text-align: center;
+  }
+}

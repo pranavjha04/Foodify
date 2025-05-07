@@ -1,0 +1,6 @@
+.categoryHeader {
+  text-align: center;
+  font-size: 4.8rem;
+  font-weight: 800;
+  color: var(--text-color);
+}

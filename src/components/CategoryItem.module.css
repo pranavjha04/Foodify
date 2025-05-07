@@ -1,0 +1,40 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.item a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.item a {
+  color: var(--text-color);
+  text-decoration: none;
+  text-align: center;
+}
+.categoryImage {
+  align-self: center;
+  width: 12rem;
+  height: 12rem;
+  object-fit: contain;
+}
+
+.item p {
+  font-size: 2.2rem;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.item p:hover {
+  background-color: var(--light-red);
+  border-radius: 1.5rem;
+}
+
+.activeCategory {
+  background-color: var(--primary-red);
+  border-radius: 1.5rem;
+}
